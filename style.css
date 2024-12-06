@@ -1,0 +1,406 @@
+@font-face {
+    font-family: bebas;
+    src: url(fonts/bebas_neue/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: gontserrat;
+    src: url(fonts/gontserrat/Gontserrat-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: bebas;
+    text-decoration: none;
+    list-style: none;
+}
+.header {
+    font-family: bebas;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgba(33, 33, 33, 0.9);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+span{
+    color: royalblue;
+}
+.logo {
+    font-size: 45px;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+.logo span {
+    color: royalblue;
+}
+.logo:hover{
+    color: royalblue;
+    text-shadow: 0 0 25px royalblue, 0 0 50px royalblue;
+    transform: scale(1.1);
+}
+
+.navbar a{
+    font-size: 28px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: royalblue;
+    text-shadow: 0 0 25px royalblue, 0 0 50px royalblue;
+    transform: scale(1.1);
+}
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(24, 24, 24);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 12%;
+    gap: 2rem;
+}
+.home-content {
+    max-width: 50%;
+    color: white;
+}
+.home-content h3{
+    font-size: 42px;
+}
+.home-content h1{
+    font-size: 62px;
+    line-height: 1.2;
+}
+.home-content p{
+    font-family: gontserrat;
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+.btn-box{
+    width: 345px;
+    display: flex;
+    gap: 2em;
+
+}
+.btn1{
+    padding: 15px 30px;
+    background-color: royalblue;
+    color: rgb(33, 33, 33);
+    border: 2px solid transparent;
+    border-radius: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: 0.3 ease;
+    cursor: pointer;
+}
+.btn1:hover{
+    background-color: rgb(33, 33, 33);
+    color: royalblue;
+    border: 2px solid rgb(33, 33, 33);
+}
+.img-box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+}
+.img-box img {
+    max-width: 100%;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: royalblue;
+}
+::-webkit-scrollbar-track {
+    background-color: rgb(33, 33, 33);
+}
+.about{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(20, 20, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12%;
+}
+.heading {
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.heading span {
+    color: royalblue;
+}
+.about-contents {
+    text-align: center;
+    max-width: 800px;
+    color: white;
+}
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-top: 40px;
+}
+.about-item {
+    background: rgb(30, 30, 30);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.about-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.icon-box img{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.about-item p {
+    font-family: gontserrat;
+    font-size: 16px;
+    color: #ccc;
+}
+.skills {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(24, 24, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12%;
+}
+.skills-contents {
+    text-align: center;
+    max-width: 800px;
+    color: white;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-top: 40px;
+}
+.skill-item {
+    background: rgb(30, 30, 30);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skill-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.icon-box img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.skill-item h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.skill-item p {
+    font-family: gontserrat;
+    font-size: 16px;
+    color: #ccc;
+}
+.portfolio {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(20, 20, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12%;
+}
+.portfolio-contents {
+    text-align: center;
+    max-width: 1200px;
+    color: white;
+}
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-top: 40px;
+}
+.portfolio-item {
+    background: rgb(30, 30, 30);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.portfolio-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.icon-box img {
+    max-width: 80px;
+    margin-bottom: 15px;
+}
+.portfolio-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.portfolio-item p {
+    font-family: gontserrat;
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 15px;
+}  
+.btn-download {
+    padding: 10px 20px;
+    background-color: royalblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}  
+.btn-download:hover {
+    background-color: rgb(33, 33, 33);
+    color: royalblue;
+}
+.resume {
+  width: 100%;
+  padding: 50px 12%;
+  background-color: rgb(24, 24, 24);
+  color: white;
+  text-align: center;
+}
+.resume .heading {
+  font-size: 50px;
+  color: white;
+  margin-bottom: 20px;
+}
+.resume .heading span {
+  color: royalblue;
+}
+.resume-content p {
+  font-family: gontserrat;
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+.resume-box {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  background: rgb(30, 30, 30);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.resume-box iframe {
+  width: 100%;
+  height: 600px;
+  border: none;
+}
+.download-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: royalblue;
+  color: rgb(24, 24, 24);
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.download-btn:hover {
+  background-color: rgb(24, 24, 24);
+  color: royalblue;
+  border: 2px solid royalblue;
+}
+.contact {
+    width: 100%;
+    padding: 50px 12%;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    text-align: center;
+}
+.heading {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+.heading span {
+    color: royalblue;
+}
+.contact-content p {
+    font-family: gontserrat;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+.contact-item p {
+    font-size: 20px;
+    color: white;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.contact-item p a {
+    color: royalblue;
+    text-decoration: none;
+    transition: text-shadow 0.3s ease;
+}
+.contact-item p a:hover {
+    text-shadow: 0 0 10px royalblue, 0 0 20px royalblue;
+}
+.contact-item:hover p {
+    color: royalblue;
+    transform: scale(1.1);
+}
+.footer{
+    position:  relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: rgb(33, 33, 33);
+}
+.copyright{
+    font-size: 8px;
+    font-family: gontserrat;
+    text-align: center;
+    color: white;
+}
